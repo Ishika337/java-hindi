@@ -60,11 +60,37 @@ const users = [
 users[1].email 
  //console.log(tinderUser) ;
 
- console.log(Object.keys(tinderUser)) ;
- console.log(Object.values(tinderUser)) ;
- console.log(Object.entries(tinderUser)) ; // remember that we get ouput in the form of arrays
+//  console.log(Object.keys(tinderUser)) ;
+//  console.log(Object.values(tinderUser)) ;
+//  console.log(Object.entries(tinderUser)) ; // remember that we get ouput in the form of arrays
 
- console.log(tinderUser.hasOwnProperty('isLoggedIn')) ;// check that certain property lies or not 
+//  console.log(tinderUser.hasOwnProperty('isLoggedIn')) ;// check that certain property lies or not 
 
  
+const course  = {
+
+    coursename : " js in hindi" ,
+    price : "999" ,
+    courseInstructor : " hitesh"
+}
+
+// destructure of objects  mtlb  hum apne hisab se varibles  ko naam de skte h
+
+const { courseInstructor} = course 
+ 
+ console.log(courseInstructor) ; // direct bhi kr skte h 
+const { courseInstructor : instructor} = course 
+console.log(instructor) ; // ya koi aur naam deke bhi kr skte h
+
+// {
+//     "name" : "hitesh" ,
+//     "coursename" : "js in  hindi" ,     in json we doesnt gaive name to an object
+//     "price" : "free"
+// }
+
+
+// similarly hum arrays ko bhi destructue kr skte h like objects 
+
+
+
 
